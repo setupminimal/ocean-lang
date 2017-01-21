@@ -1,0 +1,33 @@
+Ocean
+=====
+
+Ocean is a trivial language that compiles directly to C source code.
+
+For my continuing studies at UNH, I am taking CS 520, which involves writing C code,
+but I have a mild dislike for brackets and a heavy distrust of semicola as line-
+delimiters. Therefore, I wrote Ocean, which is like C but looks different.
+
+Every Ocean program translates directly to a C program. For example,
+
+----
+int main ← void:
+    printf $ "Hello, World!\n"
+    return 0
+----
+
+becomes
+
+----
+int main(void):
+{
+    printf("Hello, World!\n");
+    return 0;
+}
+----
+
+More features will be forthcoming once C annoys me sufficiently to add
+additional compiler passes.
+
+Both the Ocean compiler (`preproc.py') and `ocean-mode.el', a mode for
+editing Ocean files in Emacs are provided under the GPL, version 2,
+or any later version at your discretion.
