@@ -187,7 +187,7 @@ def compile(src):
     return src
 
 if __name__ == "__main__":
-    print("C-Alike Compiler v0.1")
+    print("Ocean Compiler v1.0")
     print()
     
     import sys
